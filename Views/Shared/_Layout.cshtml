@@ -17,30 +17,17 @@
     <script src="/Scripts/_references.js"></script>
     <script type="text/javascript" src="/Scripts/boxOver.js"></script>
     <script type="text/javascript" src="/Scripts/windowopen.js"></script>
+  
+    <link href="~/Content/magnific-popup.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery.magnific-popup.min.js"></script>
+
 
 </head>
 <body>
 
+
     <div id="main_container">
-        @*<div class="top_bar">
-            <div class="top_search">
-                <div class="search_text"><a href="#">Search Something</a></div>
-                <input type="text" placeholder="Company Name" class="search_input" name="search" />
-             
-                <input type="image" src="~/images/search.gif" class="search_bt" />
-                <div class="lang_text"><h2>Farhan Tariq BCSF11M005</h2></div>
-            </div>
-            <div class="languages">
-            <div class="top_search">
-
-                <div class="search_text"><a href="#">Category Name</a></div>
-                <input type="text" placeholder="Category Name" class="search_input" name="search" />
-            <input type="image" src="~/images/search.gif" class="search_bt" />
-
-            <div class="lang_text">Languages:</div>
-                <a href="#" class="lang"><img src="~/images/en.gif" alt="" border="0" /></a> <a href="#" class="lang"><img src="~/images/pk.gif" alt="" border="0" /></a>
-        </div>
-    </div>*@
+        
     <div id="header">
         <div id="logo"> <a href="#"><img src="~/images/logo.png" alt="" border="0" width="237" height="140" /></a> </div>
         <div class="oferte_content">
@@ -50,8 +37,8 @@
                     <img src="~/images/laptop.png" width="94" height="92" alt="" border="0" class="oferta_img" />
                     <div class="oferta_details">
                         <div class="oferta_title">Samsung GX S2000</div>
-                        <div class="oferta_text"> Samsung Electronics Showcases Innovations That Transform People’s Lives at CES 2016. </div>
-                        @*<a href="details.html" class="details">details</a>*@
+                        <div class="oferta_text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </div>
+                        <a href="details.html" class="details">details</a>
                     </div>
                 </div>
                 <div class="oferta_pagination"> <span class="current">1</span> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> </div>
@@ -122,12 +109,12 @@
                 <div class="product_img"><a href="details.html"><img src="~/images/laptop.png" alt="" border="0" /></a></div>
                 <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
             </div>
-            @*<div class="title_box">Newsletter</div>*@
-            @*<div class="border_box">
+            @*<div class="title_box">Newsletter</div>
+            <div class="border_box">
                 <input type="text" name="newsletter" class="newsletter_input" value="your email" />
                 <a href="#" class="join">join</a>
-            </div>*@
-            @*<div class="banner_adds"> <a href="#"><img src="~/images/bann2.jpg" alt="" border="0" /></a> </div>*@
+            </div>
+            <div class="banner_adds"> <a href="#"><img src="~/images/bann2.jpg" alt="" border="0" /></a> </div>*@
         </div>
         @RenderBody()
         <div class="right_content">
@@ -156,19 +143,24 @@
                 <li class="odd"><a href="#">Phillips</a></li>
                 <li class="even"><a href="#">QMobile</a></li>
             </ul>
-            @*<div class="banner_adds"> <a href="#"><img src="~/images/bann1.jpg" alt="" border="0" /></a> </div>*@
-        </div>
+            @*<div class="banner_adds"> <a href="#"><img src="~/images/bann1.jpg" alt="" border="0" /></a> </div>
+        </div>*@
         <!-- end of right content -->
     </div>
     <!-- end of main content -->
     <div class="footer">
         <div class="left_footer"> <img src="~/images/footer_logo.png" alt="" width="170" height="49" /> </div>
         @*<div class="center_footer">
-            Farhan Tariq BCSF11M005<br />
+            FARHAN TARIQ   BCSF11M005<br />
         </div>*@
     </div>
     </div>
+
+ 
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
+
+    <link href="~/Content/jquery-ui.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-ui.js"></script>
 </body>
 </html>
