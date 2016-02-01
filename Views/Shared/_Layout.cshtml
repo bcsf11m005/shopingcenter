@@ -160,7 +160,21 @@
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
 
-    <link href="~/Content/jquery-ui.css" rel="stylesheet" />
-    <script src="~/Scripts/jquery-ui.js"></script>
+        <script>
+
+    $(document).ready(function () {
+        $("#date").datepicker({
+            flat: true,
+            date: '2008-07-31',
+            current: '2008-07-31',
+            calendars: 1,
+            starts: 1
+        });
+    });
+        </script>
+
+
+        <link href="~/Content/jquery-ui.css" rel="stylesheet" />
+        <script src="~/Scripts/jquery-ui.js"></script>
 </body>
 </html>
